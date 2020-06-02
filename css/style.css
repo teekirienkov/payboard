@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .header {
   padding-top: 6px; /* Padding это отступы сверху */
   padding-bottom: 6px; /* Снизу */
@@ -9,13 +13,18 @@
 }
 
 .header-block {
+  display: flex; /* Элементы располагаются в строчку */
+  align-items: center; /* Расположение элементов относительно себя по центру */
+  justify-content: space-between; /* Расположение элементов по краям */
+
   margin: auto; /* Выравнивание по горизонтали */
   max-width: 1200px; /* Максимальная ширина */
 }
 
 .search-input {
   width: 100%; /* Ширина максимальная, но ограничивается в 336px */
-  max-width: 336px;
+
+  width: 336px;
 
   padding: 5px 30px 5px 12px;
   background: #FFFFFF;
@@ -25,4 +34,88 @@
   background-image: url(../img/search-icon.svg);
   background-repeat: no-repeat; /* Без повторения (добавляется 1 иконка) */
   background-position: right 12px center; /* Отступ справа 12 px */
+
+  font-size: 14px;
+  line-height: 22px; /* Высота строки */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  margin-right: 8px;
+}
+
+.user-name {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-panel {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.navigation-link:before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #003A8C;
+  margin-right: 12px;
+}
+
+.navigation-link:last-child:after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #003A8C;
+  margin-left: 12px;
+}
+
+.header-icon {
+  fill:#002766;
+}
+
+.icons-panel {
+  display: flex;
+  align-items: center;
+}
+
+.icons-link {
+  margin-left: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.header-icon:hover {  /* При наведении иконки становятся белыми */
+  fill:white;
+}
+
+.icons-link:last-child:before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #003A8C;
+  margin-right: 12px;
 }
