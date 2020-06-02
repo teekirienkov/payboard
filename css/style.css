@@ -61,7 +61,7 @@ body {
 }
 
 .navigation-panel {
-  margin-left: 12px;
+  margin-left: 1px; /* тут было 12 или 16 px */
   display: flex;
   align-items: center;
 }
