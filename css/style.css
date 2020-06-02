@@ -1,3 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
+  padding-top: 6px; /* Padding это отступы сверху */
+  padding-bottom: 6px; /* Снизу */
   background-color: #0050B3;
+}
+
+.header-block {
+  margin: auto; /* Выравнивание по горизонтали */
+  max-width: 1200px; /* Максимальная ширина */
+}
+
+.search-input {
+  width: 100%; /* Ширина максимальная, но ограничивается в 336px */
+  max-width: 336px;
+
+  padding: 5px 30px 5px 12px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat; /* Без повторения (добавляется 1 иконка) */
+  background-position: right 12px center; /* Отступ справа 12 px */
 }
