@@ -3,6 +3,7 @@
 }
 
 body {
+  background: #E5E5E5;
   font-family: sans-serif;
 }
 
@@ -118,4 +119,55 @@ body {
   height: 16px;
   background: #003A8C;
   margin-right: 12px;
+}
+
+.container {
+  max-width: 1200px;  /* Содержимое имеет макс ширину в 1200px и выравнивается автоматически auto */
+  margin: auto;
+}
+
+.menu-sidebar {
+  max-width: 192px;
+  margin-top: 18px;
+}
+
+.menu-sidebar .user-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-sidebar .user-name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column; /* элементы выстраиваются друг за другом */
+  justify-content: center; /* элементы относительно друг друга выравниваются по центру */
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nav-link {
+  padding: 4px 8px; /* отступы */
+  display: flex;
+  align-items: center; /* текст относительно картинок (messages и т.д.) выравнивается по центру */
+  border-radius: 4px;
+  text-decoration: none;
+  color: #595959;
+  line-height: 22px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.nav-text {
+  margin-left: 8px;
+}
+
+.nav-link.active {
+  background: #FFFFFF;
+  color: #262626;
 }
