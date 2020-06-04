@@ -1,5 +1,5 @@
 class Service {
-  getData = async (url) => {
+  async getData (url) {
     const response = await fetch(url);
     if (response.ok) {
       return response.json();
