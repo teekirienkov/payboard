@@ -1,2 +1,4 @@
-maket/
 /package.json
+/node_modules
+/db
+*.json

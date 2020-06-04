@@ -240,10 +240,11 @@ body {
   background: #F5F5F5;
   border-radius: 48px;
   border: none;
-  padding: 9px 12px;
+  padding: 9px 8px;
   display: flex;
   align-items: center;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .tag-icon {
@@ -281,6 +282,8 @@ body {
 }
 
 .post-header-icon {
+  cursor: pointer;
+  outline: none;
   background-color: #FFFFFF;
   border: none;
 }
@@ -354,9 +357,12 @@ body {
   border: none;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .post-button-text {
+  cursor: pointer;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -371,4 +377,8 @@ body {
   height: 1px;
   background-color: #E8E8E8;
   margin-bottom: 16px;
+}
+
+.create-post-image {
+  padding-right: 8px;
 }
