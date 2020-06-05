@@ -11,7 +11,8 @@
   <header class="header">
     <div class="header-block">
       <div class="search">
-        <input type="text" class="search-input" placeholder="Поиск">
+        <h2>Distance</h2>
+        <!-- <input type="text" class="search-input" placeholder="Поиск"> -->
       </div>
 
       <div class="navigation">
@@ -167,8 +168,8 @@
         <!-- /.header -->
         <div class="create-post-body">
           <img src="img/avatar.png" alt="avatar" class="user-avatar">
-          <div class="create-post-input" contenteditable="true">
-            Что сегодня?
+          <div class="create-post-input" contenteditable="true" role="textbox" aria-multiline="true">
+            What's new?
           </div>
         </div>
         <!-- /.body -->
@@ -317,6 +318,26 @@
             </span>
           </div>
         </a>
+      </div>
+      <!-- /.stories -->
+      <div class="notes-list">
+        <div class="note">
+          <svg class="note-image" width="6" height="13" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.875 1.875C0.875 2.17337 0.993526 2.45952 1.2045 2.6705C1.41548 2.88147 1.70163 3 2 3C2.29837 3 2.58452 2.88147 2.79549 2.6705C3.00647 2.45952 3.125 2.17337 3.125 1.875C3.125 1.57663 3.00647 1.29048 2.79549 1.0795C2.58452 0.868526 2.29837 0.75 2 0.75C1.70163 0.75 1.41548 0.868526 1.2045 1.0795C0.993526 1.29048 0.875 1.57663 0.875 1.875ZM2.5625 4.5H1.4375C1.33437 4.5 1.25 4.58437 1.25 4.6875V11.0625C1.25 11.1656 1.33437 11.25 1.4375 11.25H2.5625C2.66562 11.25 2.75 11.1656 2.75 11.0625V4.6875C2.75 4.58437 2.66562 4.5 2.5625 4.5Z" fill="#002766"/>
+          </svg>
+          <span class="note-text">
+            This block is for custom reminders or memos
+          </span>
+        </div>
+
+        <div class="note">
+          <svg class="note-image" width="6" height="13" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.875 1.875C0.875 2.17337 0.993526 2.45952 1.2045 2.6705C1.41548 2.88147 1.70163 3 2 3C2.29837 3 2.58452 2.88147 2.79549 2.6705C3.00647 2.45952 3.125 2.17337 3.125 1.875C3.125 1.57663 3.00647 1.29048 2.79549 1.0795C2.58452 0.868526 2.29837 0.75 2 0.75C1.70163 0.75 1.41548 0.868526 1.2045 1.0795C0.993526 1.29048 0.875 1.57663 0.875 1.875ZM2.5625 4.5H1.4375C1.33437 4.5 1.25 4.58437 1.25 4.6875V11.0625C1.25 11.1656 1.33437 11.25 1.4375 11.25H2.5625C2.66562 11.25 2.75 11.1656 2.75 11.0625V4.6875C2.75 4.58437 2.66562 4.5 2.5625 4.5Z" fill="#002766"/>
+          </svg>
+          <span class="note-text">
+            This block is for custom reminders or memos
+          </span>
+        </div>
       </div>
     </div>
 
