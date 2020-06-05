@@ -6,8 +6,9 @@ const createPostInput = document.querySelector('.create-post-input'),
       mainFeed = document.querySelector('.main-feed'),
       onePost = document.querySelector('.post');
 
-buttonPost.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const response = new Service();
   response.getData('db/posts.json')
     .then(response => renderPost(response))
 })
+
