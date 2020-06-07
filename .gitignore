@@ -1,5 +1,10 @@
 /package.json
 /node_modules
 /db
+/Server/.vs
+/Server/PatreonV2.0/obj
+/Server/PatreonV2.0/bin
 *.json
+*.cache
 /dist
+.idea/
